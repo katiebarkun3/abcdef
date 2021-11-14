@@ -1,4 +1,4 @@
-//Баркун Екатерина
+//ГЃГ Г°ГЄГіГ­ Г…ГЄГ ГІГҐГ°ГЁГ­Г 
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -24,7 +24,7 @@ int main() {
 		if (i % k == 0) {
 			cout << i << endl;
 		}
-	}                 2*/
+	}                 2  ne verno (141121.3)*/
 
 
 	/*int a, b;
@@ -32,7 +32,7 @@ int main() {
 	for (int i = 1; i <= 9; i++) {
 		b = i * a;
 		cout << b << endl;
-		}                4*/
+		}                4  ne verno (141121.3)*/
 	
 
 

@@ -1,4 +1,4 @@
-//Баркун Екатерина
+//ГЃГ Г°ГЄГіГ­ Г…ГЄГ ГІГҐГ°ГЁГ­Г 
 #include <iostream>
 #include <cmath>
 using namespace std;

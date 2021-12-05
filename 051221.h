@@ -3,7 +3,7 @@
 #include <ctime>
 #include <iomanip>
 using namespace std;
-//заполнение матрицы рандомными числами
+//Г§Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ Г¬Г ГІГ°ГЁГ¶Г» Г°Г Г­Г¤Г®Г¬Г­Г»Г¬ГЁ Г·ГЁГ±Г«Г Г¬ГЁ
 void fill_rand(int** mas, int n, int m) {
 	srand(time(0));
 	for (int i = 0; i < n; i++) {
@@ -13,7 +13,7 @@ void fill_rand(int** mas, int n, int m) {
 	}
 }
 
-//вывод матрицы на экран
+//ГўГ»ГўГ®Г¤ Г¬Г ГІГ°ГЁГ¶Г» Г­Г  ГЅГЄГ°Г Г­
 void print_matrix(int** mas, int n, int m) {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
@@ -23,7 +23,7 @@ void print_matrix(int** mas, int n, int m) {
 	}
 }
 
-//написать функцию, которая вычислит кол-во чётных элементов в матрице
+//Г­Г ГЇГЁГ±Г ГІГј ГґГіГ­ГЄГ¶ГЁГѕ, ГЄГ®ГІГ®Г°Г Гї ГўГ»Г·ГЁГ±Г«ГЁГІ ГЄГ®Г«-ГўГ® Г·ВёГІГ­Г»Гµ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Гў Г¬Г ГІГ°ГЁГ¶ГҐ
 int count_chot(int** mas, int n, int m) {
 	int k = 0;
 	for (int i = 0; i < n; i++) {
@@ -34,7 +34,7 @@ int count_chot(int** mas, int n, int m) {
 	return k;
 }
 
-//написать функцию, которая вычислит кол-во положительных элементов в матрице
+//Г­Г ГЇГЁГ±Г ГІГј ГґГіГ­ГЄГ¶ГЁГѕ, ГЄГ®ГІГ®Г°Г Гї ГўГ»Г·ГЁГ±Г«ГЁГІ ГЄГ®Г«-ГўГ® ГЇГ®Г«Г®Г¦ГЁГІГҐГ«ГјГ­Г»Гµ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Гў Г¬Г ГІГ°ГЁГ¶ГҐ
 int count_positive(int** mas, int n, int m) {
 	int k = 0;
 	for (int i = 0; i < n; i++) {
@@ -45,7 +45,7 @@ int count_positive(int** mas, int n, int m) {
 	return k;
 }
 
-//произведение чисел в строке k
+//ГЇГ°Г®ГЁГ§ГўГҐГ¤ГҐГ­ГЁГҐ Г·ГЁГ±ГҐГ« Гў Г±ГІГ°Г®ГЄГҐ k
 int count_proizk(int** mas, int n, int m) {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
@@ -53,7 +53,7 @@ int count_proizk(int** mas, int n, int m) {
 		}
 	}
 	int k, a = 1;
-	cout << "введите номер строки\n";
+	cout << "ГўГўГҐГ¤ГЁГІГҐ Г­Г®Г¬ГҐГ° Г±ГІГ°Г®ГЄГЁ\n";
 	cin >> k;
 	for (int p = 0; p < m; p++) {
 		a *= mas[k][p];
@@ -61,7 +61,7 @@ int count_proizk(int** mas, int n, int m) {
 	return a;
 }
 
-//умножение матрицы на число
+//ГіГ¬Г­Г®Г¦ГҐГ­ГЁГҐ Г¬Г ГІГ°ГЁГ¶Г» Г­Г  Г·ГЁГ±Г«Г®
 void matrica_na_chislo(int** mas, int n, int m, int number) {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
@@ -70,7 +70,7 @@ void matrica_na_chislo(int** mas, int n, int m, int number) {
 	}
 }
 
-	//среднее арифметическое главной диагонали
+	//Г±Г°ГҐГ¤Г­ГҐГҐ Г Г°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГ®ГҐ ГЈГ«Г ГўГ­Г®Г© Г¤ГЁГ ГЈГ®Г­Г Г«ГЁ
 	double sred_arifm_glavn_diag(int** mas, int n, int m) {
 		int sum = 0;
 		for (int i = 0; i < n; i++) {
@@ -79,7 +79,7 @@ void matrica_na_chislo(int** mas, int n, int m, int number) {
 		return static_cast<double>(sum) / n;
 }
 
-	//сумма элементов главной диагонали
+	//Г±ГіГ¬Г¬Г  ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў ГЈГ«Г ГўГ­Г®Г© Г¤ГЁГ ГЈГ®Г­Г Г«ГЁ
 	int sum_main(int** mas, int n, int m) {
 		int s = 0;
 		for (int i = 0, i < n, i++) {
@@ -88,7 +88,7 @@ void matrica_na_chislo(int** mas, int n, int m, int number) {
 		return s;
 	}
 
-	//факториал
+	//ГґГ ГЄГІГ®Г°ГЁГ Г«
 	long long int fact(int k) {
 		long long int f = 1;
 		for (int i = 0; i <= k; i++) {
@@ -97,7 +97,7 @@ void matrica_na_chislo(int** mas, int n, int m, int number) {
 		return f;
 	}
 
-	//развернуть выбранную строку 1 2 3 4 5
+	//Г°Г Г§ГўГҐГ°Г­ГіГІГј ГўГ»ГЎГ°Г Г­Г­ГіГѕ Г±ГІГ°Г®ГЄГі 1 2 3 4 5
 	//5 4 3 2 1
 	void reverse_row(int** mas, int k, int m) {
 		int s = m / 2;
